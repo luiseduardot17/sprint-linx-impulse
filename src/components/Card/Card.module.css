@@ -1,0 +1,19 @@
+.containerImage {
+  top: 860px;
+  left: 286px;
+  width: 200px;
+  height: 150px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 10px;
+  top: 860px;
+  left: 285px;
+  width: 201px;
+  height: 350px;
+}

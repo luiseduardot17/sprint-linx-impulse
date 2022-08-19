@@ -1,0 +1,63 @@
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.titulo {
+  overflow: hidden;
+  text-align: center;
+}
+
+.titulo::before,
+.titulo::after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 16%;
+}
+
+.titulo::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.titulo::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.estoque {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height: 100vh;
+  top: 860px;
+  left: 285px;
+  width: 931px;
+  height: 740px;
+}
+
+.containerBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  top: 1651px;
+  left: 620px;
+  width: 260px;
+  height: 39px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  opacity: 1;
+}
