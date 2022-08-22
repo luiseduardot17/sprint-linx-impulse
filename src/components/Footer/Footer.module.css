@@ -1,0 +1,14 @@
+.footer {
+  font-family: "Dosis", sans-serif;
+  font-size: 30px;
+  background-color: #ffffff;
+  color: #3a1e4b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background: #707070 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+}
