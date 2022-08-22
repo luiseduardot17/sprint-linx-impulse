@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Card from "../Card/Card";
 import S from "./Estoque.module.css";
 
@@ -6,41 +6,50 @@ const Estoque = () => {
   const [produto, setProduto] = useState("");
   const [infos, setInfos] = useState("");
 
-  function handleProduto(e) {
-    setProduto(e.target.value);
-  }
+  // function handleProduto() {
+  //   setProduto(target.value);
+  // }
 
-  const url = `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1`;
+  async function handleReq() {
+    const url = `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1`;
 
-  async function handleReq(e) {
-    e.preventDefault();
     const request = await fetch(url);
     const json = await request.json();
-    setInfos(json);
+    setProduto(json.products);
+
+    console.log(produto);
   }
 
-  console.log(infos);
-
+  useEffect(() => {
+    handleReq();
+  }, []);
 
   return (
     <section className={S.section}>
-        <div>
+      <div>
         <h2 className={S.titulo}>Sua Seleção especial</h2>
-        </div>
-        
+      </div>
+
       <div className={S.estoque}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        
+        {produto.map((produto, index) => {
+          return (
+            <Card
+              key={index}
+              imagem={produto.image}
+              nome={produto.name}
+              desc={produto.description}
+              valorAntigo={produto.oldPrice}
+              valorAtual={produto.price}
+              vezesParcela={produto.installments.count}
+              valorParc={produto.installments.value}
+            />
+          );
+        })}
       </div>
       <div className={S.containerBtn}>
-        <button className={S.btn} onClick={handleReq}>Ainda mais produtos aqui!</button>
+        <button className={S.btn} onClick={handleReq}>
+          Ainda mais produtos aqui!
+        </button>
       </div>
     </section>
   );
