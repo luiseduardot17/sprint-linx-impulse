@@ -1,0 +1,91 @@
+.section {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .titulo {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .titulo::before,
+  .titulo::after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    vertical-align: middle;
+    width: 16%;
+  }
+  
+  .titulo::before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .titulo::after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    color: #000000;
+  }
+  
+  .label {
+    text-align: left;
+  }
+  
+  .input {
+    top: 1960px;
+    left: 870px;
+    width: 340px;
+    height: 30px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+  }
+
+  .contInput {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .friendName {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shareEmail {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btnInput {
+    display: flex;
+    justify-content: center;
+    top: 670px;
+    left: 870px;
+    width: 340px;
+    height: 39px;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+    color: #000000;
+  }
