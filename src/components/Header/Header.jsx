@@ -13,7 +13,7 @@ const Header = () => {
       </p>
       <nav className={S.navbar}>
         <Button texto="Conheça a Linx" />
-        <Button texto="Ajude o algoritimo" />
+        <Button texto="Ajude o algorítimo" />
         <Button texto="Seus produtos" />
         <Button texto="Compartilhe" />
       </nav>

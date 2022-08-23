@@ -4,16 +4,19 @@ import S from "./Estoque.module.css";
 
 const Estoque = () => {
   const [produto, setProduto] = useState([]);
-  const [infos, setInfos] = useState("");
+  const [page, setPage] = useState(1);
 
   async function handleReq() {
-    const url = `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1`;
+    const url = `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=${page}`;
 
-    const request = await fetch(url);
-    const json = await request.json();
-    setProduto(json.products);
+    const response = await fetch(url);
+    const json = await response.json();
+    setProduto([...produto, ...json.products]);
+    setPage("");
+  }
 
-    console.log(produto);
+  function addPage() {
+    setPage(page + 1);
   }
 
   useEffect(() => {
@@ -43,7 +46,7 @@ const Estoque = () => {
         })}
       </div>
       <div className={S.containerBtn}>
-        <button className={S.btn} onClick={handleReq}>
+        <button className={S.btn} onClick={addPage}>
           Ainda mais produtos aqui!
         </button>
       </div>

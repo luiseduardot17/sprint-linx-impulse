@@ -10,3 +10,9 @@
   background-image: linear-gradient(to left, #411e5a 0%, #224d52 100%);
   opacity: 1;
 }
+
+.footer > a {
+  font-family: "Dosis", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}

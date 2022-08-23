@@ -9,6 +9,7 @@
   height: 50vh;
   border: 1px solid #442258;
   opacity: 1;
+  border-bottom: 3px solid #f0462d;
 }
 
 .header > h1 {
@@ -19,10 +20,14 @@
     -webkit-text-fill-color: transparent;
 }
 
+.header > p {
+  font-size: 20px;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  width: 50%;
+  width: 65%;
   padding: 50px;
 }
