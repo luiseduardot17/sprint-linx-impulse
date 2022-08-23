@@ -3,12 +3,8 @@ import Card from "../Card/Card";
 import S from "./Estoque.module.css";
 
 const Estoque = () => {
-  const [produto, setProduto] = useState("");
+  const [produto, setProduto] = useState([]);
   const [infos, setInfos] = useState("");
-
-  // function handleProduto() {
-  //   setProduto(target.value);
-  // }
 
   async function handleReq() {
     const url = `https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1`;

@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
-import S from "./Header.module.css"
+import S from "./Header.module.css";
 
 const Header = () => {
   return (
@@ -12,12 +12,11 @@ const Header = () => {
         navegação. Aproveite!
       </p>
       <nav className={S.navbar}>
-      <Button texto="Conheça a Linx" />
-      <Button texto="Ajude o algoritimo" />
-      <Button texto="Seus produtos" />
-      <Button texto="Compartilhe" />
+        <Button texto="Conheça a Linx" />
+        <Button texto="Ajude o algoritimo" />
+        <Button texto="Seus produtos" />
+        <Button texto="Compartilhe" />
       </nav>
-      
     </div>
   );
 };

@@ -5,7 +5,6 @@
   height: 150px;
   text-align: center;
   background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
 }
 
 .card {
@@ -15,6 +14,26 @@
   gap: 10px;
   top: 860px;
   left: 285px;
-  width: 201px;
+  width: 215px;
   height: 350px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.25rem;
+  transition: box-shadow 200ms ease 0s;
+  transition-property: box-shadow;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  box-shadow: rgb(40 41 61 / 16%) 0px 0px 1px, rgb(96 97 112 / 16%) 0px 0.5px 2px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.price {
+  color: #ff6500;
 }

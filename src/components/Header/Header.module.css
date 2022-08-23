@@ -1,15 +1,22 @@
 .header {
   font-family: "Dosis", sans-serif;
-  background-color: #ffffff;
-  color: #3a1e4b;
+  background-color: #442258;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 50vh;
-  background: #707070 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
+  border: 1px solid #442258;
   opacity: 1;
+}
+
+.header > h1 {
+  background-color: #ffb200;
+    background-image: linear-gradient(to right, #f0462d, #ffb200);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar {

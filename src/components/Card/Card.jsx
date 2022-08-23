@@ -18,8 +18,10 @@ const Card = ({
       </div>
       <h2>{nome}</h2>
       <p>{desc}</p>
-      <p>De: R${valorAntigo}</p>
-      <h2>
+      <p>
+        De: <s>R${valorAntigo}</s>
+      </p>
+      <h2 className={S.price}>
         <strong>Por: R${valorAtual}</strong>
       </h2>
       <p>
