@@ -11,17 +11,18 @@ const Estoque = () => {
 
     const response = await fetch(url);
     const json = await response.json();
-    setProduto([...produto, ...json.products]);
-    setPage("");
+    setProduto([...produto,...json.products]);
+    console.log(produto);
   }
 
-  function addPage() {
+  const addPage = () => {
     setPage(page + 1);
+    console.log('pagina adicionada');
   }
 
   useEffect(() => {
     handleReq();
-  }, []);
+  }, [page]);
 
   return (
     <section className={S.section}>

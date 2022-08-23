@@ -1,5 +1,4 @@
 .section {
-  height: 150vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,7 +40,6 @@
   align-self: center;
   flex-wrap: wrap;
   justify-content: space-around;
-  height: 100vh;
   top: 860px;
   left: 285px;
   width: 1050px;
