@@ -8,7 +8,7 @@
 }
 
 .titulo {
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
   padding: 10px;
 }

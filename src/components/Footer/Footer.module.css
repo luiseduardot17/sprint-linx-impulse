@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 100vh;
   background-image: linear-gradient(to left, #411e5a 0%, #224d52 100%);
   opacity: 1;
 }
