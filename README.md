@@ -4,7 +4,7 @@ Sprint do módulo 5 da Resilia Educação, com objetivo de desenvolver uma aplic
 
 ## 📷 Imagem da aplicação:
 
-<img src="/app.png">
+<img src="app.png">
 
 ## 🚧 Link do deploy do Vercel: 🚧
 ```
