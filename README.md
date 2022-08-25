@@ -4,11 +4,11 @@ Sprint do módulo 5 da Resilia Educação, com objetivo de desenvolver uma aplic
 
 ## 📷 Imagem da aplicação:
 
-<img src="app.png">
+![app](https://user-images.githubusercontent.com/102761201/186583134-90ca91f0-0b77-4109-9462-d6fbd76f06d0.PNG)
 
-## 🚧 Link do deploy do Vercel: 🚧
+## 🔼 Link do deploy do Vercel:
 ```
-https://sprint-linx-impulse.vercel.com/
+https://sprint-linx-impulse.vercel.app/
 ```
 
 ## 🎯 Baseado no desafio do processo seletivo da front da Linx Impulse
